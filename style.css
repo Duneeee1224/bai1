@@ -1,0 +1,103 @@
+*{
+    font-family: 'Yu Gothic', 'YuGothic', sans-serif;
+    font-weight: 700;
+}
+p{
+    margin: 0;
+}
+body{
+    width: 1280px; height: auto; position: relative; margin: 0 auto;
+    
+}
+
+header{
+    width: 1280px; height: 90px; position: relative; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+#logo{
+    position: absolute; top: 30px; left: 40px; 
+    font-family: 'Hind Jalandhar', sans-serif; font-weight: 600; font-size: 18px; color: #4C7DF0;
+}
+
+#idea{
+    position: absolute; top: 24px; left: 788px; text-align: center;
+}
+
+#idea p{
+    font-weight: 700; font-size: 10px; color: #4C7DF0; margin-top: 5px;
+}
+
+.header_img{
+    position: absolute;
+    width: 30px; height: 30px;
+}
+
+header button{
+    position: absolute; width: 150px; height: 38px; top: 26px; left: 1090px; 
+    background: #FFFFFF; border-radius: 19px;  border: 2px solid #4C7DF0; box-shadow: 0px 4px 6px 0px #00000026;
+    font-weight: 700; font-size: 13px; color: #4C7DF0; line-height: 19.5px; letter-spacing: 5%;
+}
+
+#menu{
+    position: absolute; top: 160px; left: 160px;
+}
+
+#menu div{
+    width: 150px; height: 40px; 
+    border-radius: 3px; display: flex; align-items: center; padding-left: 5px;
+}
+
+#menu div img{
+    margin-right: 10px; 
+}
+
+#menu div p{
+    font-weight: 700; font-size: 16px; color: #7A7A7A; line-height: 24px; letter-spacing: 5%;
+}
+
+#avatar img, #avatar p{
+    position: absolute;
+}
+
+.inform img, .inform p, .inform hr{
+    position: absolute;
+    font-size: 16px; line-height: 24px;
+}
+
+.inform hr{
+    width: 750px;
+    border: 1px solid #E0EBF8; margin: 0;
+}
+
+#btn{
+    position: absolute; width: 350px; height: 60px; top: 1490px; left: 465px;
+    border-radius: 50px; background-color: #4C7DF0; border: none;
+    display: flex; align-items: center; justify-content: center;
+}
+
+#sub_btn{
+    position: absolute; top: 1580px; left: 603px; 
+    font-size: 18px; line-height: 28.8px; color: #4C7DF0;
+}
+
+footer{
+    position: absolute; width: 1280px; height: 240px; top: 1739px; background-color: #243A6B;
+}
+
+footer #logo{
+    position: absolute; top: 30px; left: 30px;  
+    font-weight: 500; font-size: 20px; line-height: 34.5px; color: #FFFFFF;
+}
+
+footer div{
+    position: absolute;
+    display: flex;
+}
+
+footer div p{
+    font-size: 14px; line-height: 23.02px; color: #FFFFFF; 
+}
+
+footer img{
+    margin: 0px 20px;
+}

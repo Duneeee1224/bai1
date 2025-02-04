@@ -1,0 +1,161 @@
+input::placeholder, textarea::placeholder{
+    color: #BCC1CD; /* Màu chữ gợi ý */
+}
+
+.checkbox-group {
+    position: absolute;
+    top: 1130px; /* Điều chỉnh để nằm giữa p và input */
+    left: 370px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Tạo khoảng cách giữa các hàng */
+}
+
+.checkbox-row {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các checkbox */
+    justify-content: flex-start; /* Căn trái các checkbox */
+}
+
+.checkbox-row label{
+    font-weight: 500;
+}
+
+.checkbox-row:nth-child(1) { 
+    display: grid;
+    grid-template-columns: repeat(6, auto); /* Hàng 1 có 6 checkbox */
+}
+
+.checkbox-row:nth-child(2) { 
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Hàng 2 có 3 checkbox */
+}
+
+.checkbox-row:nth-child(3) { 
+    display: grid;
+    grid-template-columns: repeat(1, auto); /* Hàng 3 có 1 checkbox */
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-family: 'Yu Gothic', 'YuGothic', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    accent-color: #3D71F6;
+}
+
+*{
+    font-family: 'Yu Gothic', 'YuGothic', sans-serif;
+    font-weight: 700;
+}
+p{
+    margin: 0;
+}
+body{
+    width: 1280px; height: auto; position: relative; margin: 0 auto;
+    
+}
+
+header{
+    width: 1280px; height: 90px; position: relative; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+#logo{
+    position: absolute; top: 30px; left: 40px; 
+    font-family: 'Hind Jalandhar', sans-serif; font-weight: 600; font-size: 18px; color: #4C7DF0;
+}
+
+#idea{
+    position: absolute; top: 24px; left: 788px; text-align: center;
+}
+
+#idea p{
+    font-weight: 700; font-size: 10px; color: #4C7DF0; margin-top: 5px;
+}
+
+.header_img{
+    position: absolute;
+    width: 30px; height: 30px;
+}
+
+header button{
+    position: absolute; width: 150px; height: 38px; top: 26px; left: 1090px; 
+    background: #FFFFFF; border-radius: 19px;  border: 2px solid #4C7DF0; box-shadow: 0px 4px 6px 0px #00000026;
+    font-weight: 700; font-size: 13px; color: #4C7DF0; line-height: 19.5px; letter-spacing: 5%;
+}
+
+#menu{
+    position: absolute; top: 160px; left: 160px;
+}
+
+#menu div{
+    width: 150px; height: 40px; 
+    border-radius: 3px; display: flex; align-items: center; padding-left: 5px;
+}
+
+#menu div img{
+    margin-right: 10px; 
+}
+
+#menu div p{
+    font-weight: 700; font-size: 16px; color: #7A7A7A; line-height: 24px; letter-spacing: 5%;
+}
+
+#avatar img, #avatar p{
+    position: absolute;
+    font-size: 18px; color: #4C7DF0;
+}
+
+#avatar div{
+    position: absolute; width: 250px; height: 42px; top: 280px; left: 620px; border-radius: 5px; border: 2px solid #4C7DF0; 
+    display: flex; align-items: center; justify-content: center;
+}
+
+.inform img, .inform p{
+    position: absolute;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.inputtext{
+    position: absolute;
+    height: 48px;
+    border-radius: 5px; border: 1px solid #BFC4D3; padding: 5px 10px;
+    width: 750px;
+}
+
+#btn{
+    position: absolute; width: 250px; height: 60px; top: 1852px; left: 565px; 
+    border-radius: 30px; border: none;  background: linear-gradient(to right, #4c7df0, #2c57bc);
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+
+footer{
+    position: absolute; width: 1280px; height: 240px; top: 2042px; background-color: #243A6B;
+}
+
+footer #logo{
+    position: absolute; top: 30px; left: 30px;  
+    font-weight: 500; font-size: 20px; line-height: 34.5px; color: #FFFFFF;
+}
+
+footer div{
+    position: absolute;
+    display: flex;
+}
+
+footer div p{
+    font-size: 14px; line-height: 23.02px; color: #FFFFFF; 
+}
+
+footer img{
+    margin: 0px 20px;
+}
