@@ -24,7 +24,7 @@ header{
 }
 
 #idea p{
-    font-weight: 700; font-size: 10px; color: #4C7DF0; margin-top: 5px;
+    font-size: 10px; color: #4C7DF0; margin-top: 5px;
 }
 
 .header_img{
@@ -32,10 +32,22 @@ header{
     width: 30px; height: 30px;
 }
 
+#bell{
+    top: 30px; left: 870px;
+}
+
+#chat{
+    top: 30px; left: 930px;
+}
+
+#Ellipse{
+    top: 20px; left: 990px; width: 50px; height: 50px;
+}
+
 header button{
     position: absolute; width: 150px; height: 38px; top: 26px; left: 1090px; 
     background: #FFFFFF; border-radius: 19px;  border: 2px solid #4C7DF0; box-shadow: 0px 4px 6px 0px #00000026;
-    font-weight: 700; font-size: 13px; color: #4C7DF0; line-height: 19.5px; letter-spacing: 5%;
+    font-size: 13px; color: #4C7DF0;
 }
 
 #menu{
@@ -52,16 +64,49 @@ header button{
 }
 
 #menu div p{
-    font-weight: 700; font-size: 16px; color: #7A7A7A; line-height: 24px; letter-spacing: 5%;
+    font-size: 16px; color: #7A7A7A;
+}
+
+#menu #hometitle{
+    color: #4C7DF0;
+}
+
+#choosing{
+    background: #E0EBF8;
 }
 
 #avatar img, #avatar p{
     position: absolute;
 }
 
+#avatar #avapic{
+    top: 160px; left: 695px;
+}
+
+#avatar p:first-child{
+    top: 287px; left: 658px; font-size: 14px; line-height: 15.4px; color: #00D1FF;
+}
+
+#avatar p:last-child{
+    top: 280px; left: 705px;  font-size: 18px;
+}
+
+#avatar #circlewhite{
+    top: 283px; left: 653px; z-index: -1;
+}
+
+#avatar #circleblue{
+    top: 275px; left: 645px; z-index: -2;
+}
+
 .inform img, .inform p, .inform hr{
     position: absolute;
     font-size: 16px; line-height: 24px;
+    left: 370px;
+}
+
+.inform p:first-child{
+    font-weight: 500;
 }
 
 .inform hr{
@@ -69,10 +114,183 @@ header button{
     border: 1px solid #E0EBF8; margin: 0;
 }
 
+.firstinform p:first-child{
+    top: 363px; left: 388px;
+}
+
+.firstinform img{
+    top: 360px;
+}
+
+.firstinform hr{
+    width: 350px;
+    top: 407px;
+}
+
+.firstinform p:last-child{
+    top: 363px; left: 468px; 
+}
+
+.secondinform p:first-child{
+    top: 363px; left: 788px;
+}
+
+.secondinform img{
+    top: 360px; left: 770px;
+}
+
+.secondinform hr{
+    width: 350px; top: 407px; left: 770px;
+}
+
+.secondinform p:last-child{
+    top: 363px; left: 935px;
+}
+
+.thirdinform p:first-child{
+    top: 450px; left: 388px;
+}
+
+.thirdinform img{
+    top: 447px;
+}
+
+.thirdinform hr{
+    width: 350px; top: 494px;
+}
+
+.thirdinform p:last-child{
+    top: 450px; left: 451px;
+}
+
+.fourthinform p:first-child{
+    top: 537px; left: 388px;
+}
+
+.fourthinform img{
+    top: 534px;
+}
+
+.fourthinform hr{
+    top: 581px;
+}
+
+.fourthinform p:last-child{
+    top: 537px; left: 451px; 
+}
+
+.fithinform p:first-child{
+    top: 624px; left: 388px;
+}
+
+.fithinform img{
+    top: 621px;
+}
+
+.fithinform #subtitle{
+    top: 653px; left: 388px; font-size: 10px; line-height: 15px; 
+}
+
+.fithinform hr{
+    top: 677px;
+}
+
+.fithinform p:last-child{
+    top: 624px; left: 535px;  
+}
+
+.sixthinform p:first-child{
+    top: 720px; left: 388px;
+}
+
+.sixthinform img{
+    top: 717px;
+}
+
+.sixthinform #subtitle{
+    top: 749px; left: 388px; font-size: 10px; line-height: 15px;  
+}
+
+.sixthinform hr{
+    top: 774px;
+}
+
+.sixthinform p:last-child{
+    top: 720px; left: 485px;  
+}
+
+.seventhinform p:first-child{
+    top: 817px; left: 388px; 
+}
+
+.seventhinform img{
+    top: 814px;
+}
+
+.seventhinform hr{
+    top: 861px;
+}
+
+.seventhinform p:last-child{
+    top: 817px; left: 468px;  
+}
+
+.eighthinform p:first-child{
+    top: 904px; left: 388px;  
+}
+
+.eighthinform img{
+    top: 901px;
+}
+
+.eighthinform hr{
+    top: 948px;
+}
+
+.eighthinform p:last-child{
+    top: 904px; left: 518px;  
+}
+
+.ninethinform p:first-child{
+    top: 991px; left: 388px;  
+}
+
+.ninethinform img{
+    top: 988px;
+}
+
+.ninethinform hr{
+    top: 1035px;
+}
+
+.ninethinform p:last-child{
+    top: 991px; left: 485px;   
+}
+
+.tenthinform p:first-child{
+    top: 1078px; left: 388px;   
+}
+
+.tenthinform img{
+    top: 1075px;
+}
+
+.tenthinform hr{
+    top: 1420px;
+}
+
+.tenthinform p:last-child{
+    width: 635px; height: 312x; top: 1078px; left: 485px;   
+}
+
 #btn{
     position: absolute; width: 350px; height: 60px; top: 1490px; left: 465px;
     border-radius: 50px; background-color: #4C7DF0; border: none;
     display: flex; align-items: center; justify-content: center;
+}
+
+#btn p{
+    font-size: 18px; line-height: 28.8px; letter-spacing: 1px; color: white;
 }
 
 #sub_btn{
@@ -100,4 +318,24 @@ footer div p{
 
 footer img{
     margin: 0px 20px;
+}
+
+footer #firstline{
+    top: 85px; left: 99px;
+}
+
+footer #firstline p:first-child{
+    color: #FFE585;
+}
+
+footer #secondline{
+    top: 158px; left: 201px;
+}
+
+footer #thirdline{
+    top: 216px; left: 487px;
+}
+
+footer #thirdline p{
+    font-size: 12px; line-height: 19.73px;
 }

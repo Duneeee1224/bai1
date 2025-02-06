@@ -24,9 +24,9 @@
             <p>ご利用方法 </p>
         </div>
     
-        <img class="header_img" style="top: 30px; left: 870px;" src="images/bell 1.png" alt="">
-        <img class="header_img" style="top: 30px; left: 930px;" src="images/chat 2.png" alt="">
-        <img class="header_img" style="top: 20px; left: 990px; width: 50px; height: 50px;" src="images/Ellipse 97.png" alt="">
+        <img id="bell" class="header_img" src="images/bell 1.png" alt="">
+        <img id="chat" class="header_img" src="images/chat 2.png" alt="">
+        <img id="Ellipse" class="header_img" src="images/Ellipse 97.png" alt="">
         
         <button>企業の方はこちら</button>
     </header>    
@@ -35,9 +35,9 @@
         <div id="menu">
             <div>
                 <img src="images/home-icon-silhouette 1.png" alt="">
-                <p style="color: #4C7DF0">マイページ</p> 
+                <p id="hometitle">マイページ</p> 
             </div>
-            <div style="background: #E0EBF8;">
+            <div id="choosing">
                 <img src="images/user 1.png" alt="">
                 <p>プロフィール</p>
             </div>
@@ -60,57 +60,57 @@
         </div>
     
         <div id="avatar">
-            <img style="top: 160px; left: 695px;" src="images/Ellipse 93.png" alt="">
+            <img src="images/Ellipse 93.png" alt="">
             <div><p>プロフィール写真を変更</p></div>
         </div>
         
-        <div class="inform">
-            <img style="top: 360px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 363px; left: 388px;">お名前（必須）</p>
-            <input class = "inputtext" style="width: 290px; top: 422px; left: 370px;" type="text" class="custom-input" placeholder="姓">
-            <input class = "inputtext" style="width: 290px; top: 422px; left: 750px;" type="text" class="custom-input" placeholder="名">
+        <div class="inform" id="firstinform">
+            <input class = "inputtext" type="text" class="custom-input" placeholder="姓">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p>お名前（必須）</p>
+            <input class = "inputtext" type="text" class="custom-input" placeholder="名">
         </div>
     
-        <div class="inform">
-            <img style="top: 520px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 523px; left: 388px;">性別</p>
-            <div>
-                <img style="top: 571px; left: 370px;" src="images/Ellipse 26.png" alt="">
-                <p style="top: 570px; left: 405px; font-size: 14px;">男性</p>
+        <div class="inform" id="secondinform">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p id="title">性別</p>
+            <div id="firstchoice">
+                <img src="images/Ellipse 26.png" alt="">
+                <p>男性</p>
             </div>
-            <div style="top: 570px; left: 464px;">
-                <img style="top: 571px; left: 464px;" src="images/Ellipse 27.png" alt="">
-                <p style="top: 570px; left: 499px; font-size: 14px;">男性</p>
+            <div id="secondchoice">
+                <img src="images/Ellipse 27.png" alt="">
+                <p>男性</p>
             </div>
-            <div style="top: 570px; left: 558px;">
-                <img style="top: 571px; left: 558px;" src="images/Ellipse 27.png" alt="">
-                <p style="top: 570px; left: 593px; font-size: 14px;">その他・未回答</p>
+            <div id="thirdchoice">
+                <img src="images/Ellipse 27.png" alt="">
+                <p>その他・未回答</p>
             </div>
         </div>
     
-        <div class="inform">
-            <img style="top: 643px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 646px; left: 388px;">メールアドレス（必須）</p>
-            <p style="top: 651px; left: 602px; font-size: 10px;">※公開されません</p>
-            <input class = "inputtext" style="top: 693px; left: 370px;" type="text" class="custom-input" placeholder="sample@sample.com">
+        <div class="inform" id="thirdinform">
+            <p>メールアドレス（必須）</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <input class = "inputtext" type="text" class="custom-input" placeholder="sample@sample.com">
+            <p>※公開されません</p>
         </div>
     
-        <div class="inform">
-            <img style="top: 791px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 794px; left: 388px;">電話番号</p>
-            <p style="top: 799px; left: 485px; font-size: 10px;">※公開されません</p>
-            <input class = "inputtext" style="width: 290px; top: 841px; left: 370px;" type="text" class="custom-input" placeholder="090-0000-0000">
+        <div class="inform" id="fourthinform">
+            <p>電話番号</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <input class = "inputtext" type="text" class="custom-input" placeholder="090-0000-0000">
+            <p>※公開されません</p>
         </div>
     
-        <div class="inform">
-            <img style="top: 939px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 942px; left: 388px;">母国語</p>
-            <input class = "inputtext" style="top: 989px; left: 370px;" type="text" class="custom-input" placeholder="日本">
+        <div class="inform" id="fifthinform">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p>母国語</p>
+            <input class = "inputtext" type="text" class="custom-input" placeholder="日本">
         </div>
     
-        <div class="inform">
-            <img style="top: 1087px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 1090px; left: 388px; margin: 0;">通話可能言語（必須）</p>
+        <div class="inform" id="sixthinform">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p>通話可能言語（必須）</p>
         
             <div class="checkbox-group">
                 <div class="checkbox-row">
@@ -131,40 +131,38 @@
                 </div>
             </div>
         
-            <input class = "inputtext" style="top: 1236px; left: 370px;" type="text" class="custom-input" placeholder="上記にない言語はこちらに記入してください">
+            <input class = "inputtext" type="text" class="custom-input" placeholder="上記にない言語はこちらに記入してください">
         </div>    
     
-        <div class="inform">
-            <img style="top: 1334px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 1337px; left: 388px;">取得検定</p>
-            <input class = "inputtext" style="top: 1384px; left: 370px;" type="text" class="custom-input" placeholder="TOEIC 1級 など">
+        <div class="inform" id="seventhinform">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p>取得検定</p>
+            <input class = "inputtext" type="text" class="custom-input" placeholder="TOEIC 1級 など">
         </div>
     
-        <div class="inform">
-            <img style="top: 1482px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 1485px; left: 388px;">自己紹介</p>
-            <textarea class = "inputtext" style="height: 250px; top: 1532px; left: 370px; font-weight: 500;" class="custom-input" placeholder="自由に記入してください。
+        <div class="inform" id="eighthinform">
+            <img src="images/Rectangle 1173.png" alt="">
+            <p>自己紹介</p>
+            <textarea class = "inputtext" class="custom-input" placeholder="自由に記入してください。
 【例】経歴や、経験、得意分野など。"></textarea>    
         </div>
     
         <button id="btn">  
-            <p style="font-size: 18px; color: white;">変更を保存する</p>
+            <p>変更を保存する</p>
             <img src="images/Line 579.png" alt="">
         </button>
     </main>
     
     <footer>
-        <p id="logo">
-            Hanacoの業界特化型オンライン通訳
-        </p>
+        <p id="logo">Hanacoの業界特化型オンライン通訳</p>
 
-        <div style="top: 85px; left: 99px;">
-            <p style="color: #FFE585;">発注者の方</p>
+        <div id="firstline">
+            <p>発注者の方</p>
             <img src="images/Line 565.png" alt="">
             <p>通訳者の方</p>
         </div>
 
-        <div style="top: 158px; left: 201px;">
+        <div id="secondline">
             <p>Hanacoの業界特化型オンライン通訳について</p>
             <img src="images/Line 565.png" alt="">
             <p>利用検討企業様</p>
@@ -176,12 +174,12 @@
             <p>お問い合わせ</p>
         </div>
 
-        <div style="top: 216px; left: 487px;">
-            <p style="font-size: 12px; line-height: 19.73px;">会社概要</p>
+        <div id="thirdline">
+            <p>会社概要</p>
             <img src="images/Line 567.png" alt="">
-            <p style="font-size: 12px; line-height: 19.73px; color: #FFFFFF; ">利用規約</p>
+            <p>利用規約</p>
             <img src="images/Line 567.png" alt="">
-            <p style="font-size: 12px; line-height: 19.73px; color: #FFFFFF; ">プライバシーポリシー</p>
+            <p>プライバシーポリシー</p>
         </div>
     </footer>
 </body>

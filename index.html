@@ -24,9 +24,9 @@
             <p>ご利用方法 </p>
         </div>
     
-        <img class="header_img" style="top: 30px; left: 870px;" src="images/bell 1.png" alt="">
-        <img class="header_img" style="top: 30px; left: 930px;" src="images/chat 2.png" alt="">
-        <img class="header_img" style="top: 20px; left: 990px; width: 50px; height: 50px;" src="images/Ellipse 97.png" alt="">
+        <img id="bell" class="header_img" src="images/bell 1.png" alt="">
+        <img id="chat" class="header_img" src="images/chat 2.png" alt="">
+        <img id="Ellipse" class="header_img" src="images/Ellipse 97.png" alt="">
         
         <button>企業の方はこちら</button>
     </header>    
@@ -35,9 +35,9 @@
         <div id="menu">
             <div>
                 <img src="images/home-icon-silhouette 1.png" alt="">
-                <p style="color: #4C7DF0">マイページ</p> 
+                <p id="hometitle">マイページ</p> 
             </div>
-            <div style="background: #E0EBF8;">
+            <div id="choosing">
                 <img src="images/user 1.png" alt="">
                 <p>プロフィール</p>
             </div>
@@ -60,119 +60,100 @@
         </div>
 
         <div id="avatar">
-            <img style="top: 160px; left: 695px;" src="images/Ellipse 93.png" alt="">
-            <p style="top: 287px; left: 658px;  font-size: 14px; line-height: 15.4px; color: #00D1FF;">S</p>
-            <img style="top: 283px; left: 653px; z-index: -1;" src="images/Ellipse 131.png" alt="">
-            <img style="top: 275px; left: 645px; z-index: -2;" src="images/Ellipse 129.png" alt="">
-            <p style="top: 280px; left: 705px;  font-size: 18px;">山田 太郎</p>
+            <p>S</p>
+            <img id="avapic" src="images/Ellipse 93.png" alt="">
+            <img id="circlewhite" src="images/Ellipse 131.png" alt="">
+            <img id="circleblue" src="images/Ellipse 129.png" alt="">
+            <p>山田 太郎</p>
         </div>
 
-        <div class="inform">
-            <img style="top: 360px; left: 370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 363px; left: 388px; 
-            font-weight: 500; ">お名前</p>
-            <p style="top: 363px; left: 468px; ">お名前</p>
-            <hr style="width: 350px; top: 407px; left: 370px;">
+        <div class="inform firstinform">
+            <p>お名前</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>お名前</p>
         </div>
-        <div class="inform">
-            <img style="top: 360px; left: 770px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 363px; left: 788px; 
-            font-weight: 500; ">ユーザーランク</p>
-            <p style="top: 363px; left: 935px; ">ランクS</p>
-            <hr style="width: 350px; top: 407px; left: 770px;">
+        <div class="inform secondinform">
+            <p>ユーザーランク</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>ランクS</p>
         </div>
-        <div class="inform">
-            <img style="top: 447px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 450px; left: 388px; 
-            font-weight: 500; ">時給</p>
-            <p style="top: 450px; left: 451px; 
-            font-size: 16px; line-height: 24px;">1,000円</p>
-            <hr style="width: 350px; top: 494px; left: 370px;">
+        <div class="inform thirdinform">
+            <p>時給</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>1,000円</p>
         </div>
-        <div class="inform">
-            <img style="top: 534px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 537px; left: 388px; 
-            font-weight: 500; ">性別</p>
-            <p style="top: 537px; left: 451px; ">女性</p>
-            <hr style="top: 581px; left: 370px;">
+        <div class="inform fourthinform">
+            <p>性別</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>女性</p>
         </div>
-        <div class="inform">
-            <img style="top: 621px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 624px; left: 388px; 
-            font-weight: 500; ">メールアドレス</p>
-            <p style="top: 653px; left: 388px; 
-            font-weight: 500; font-size: 10px; line-height: 15px; ">※公開されません</p>
-            <p style="top: 624px; left: 535px; ">sample@sample.com</p>
-            <hr style="top: 677px; left: 370px;">
+        <div class="inform fithinform">
+            <p>メールアドレス</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <p id="subtitle">※公開されません</p>
+            <hr>
+            <p>sample@sample.com</p>
         </div>
-        <div class="inform">
-            <img style="top: 717px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 720px; left: 388px; 
-            font-weight: 500; ">電話番号</p>
-            <p style="top: 749px; left: 388px; 
-            font-weight: 500; font-size: 10px; line-height: 15px; ">※公開されません</p>
-            <p style="top: 720px; left: 485px; ">090-0000-0000</p>
-            <hr style="top: 774px; left: 370px;">
+        <div class="inform sixthinform">
+            <p>電話番号</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <p id="subtitle">※公開されません</p>
+            <hr>
+            <p>090-0000-0000</p>
         </div>
-        <div class="inform">
-            <img style="top: 814px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 817px; left: 388px; 
-            font-weight: 500; ">母国語</p>
-            <p style="top: 817px; left: 468px; ">日本</p>
-            <hr style="top: 861px; left: 370px;">
+        <div class="inform seventhinform">
+            <p>母国語</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>日本</p>
         </div>
-        <div class="inform">
-            <img style="top: 901px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 904px; left: 388px; 
-            font-weight: 500; ">通訳可能言語</p>
-            <p style="top: 904px; left: 518px; ">英語</p>
-            <hr style="top: 948px; left: 370px;">
+        <div class="inform eighthinform">
+            <p>通訳可能言語</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>英語</p>
         </div>
-        <div class="inform">
-            <img style="top: 988px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 991px; left: 388px; 
-            font-weight: 500; ">取得検定</p>
-            <p style="top: 991px; left: 485px; ">全国通訳案内士 / TOEIC 960点 / 英語検定 1級</p>
-            <hr style="top: 1035px; left: 370px;">
+        <div class="inform ninethinform">
+            <p>取得検定</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>全国通訳案内士 / TOEIC 960点 / 英語検定 1級</p>
         </div>
-        <div class="inform">
-            <img style="top: 1075px; left:370px;" src="images/Rectangle 1173.png" alt="">
-            <p style="top: 1078px; left: 388px; 
-            font-weight: 500; ">自己紹介</p>
-            <p style="width: 635px; height: 312x; top: 1078px; left: 485px; ">
+        <div class="inform tenthinform">
+            <p>自己紹介</p>
+            <img src="images/Rectangle 1173.png" alt="">
+            <hr>
+            <p>
             プロフィールをご覧いただき、ありがとうございます。<br> <br>
             私は、テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。<br> <br>
             テキストが入りますテキストが入りますテキストが入りますテキストが入ります。<br>
             テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。 <br><br>
             テキストが入りますテキストが入りますテキストが入りますテキストが入ります。
             </p>
-            <hr style="top: 1420px; left: 370px;">
         </div>
 
         <button id="btn">
             <img src="images/edit 1.png" alt="">
-            <p style="font-size: 18px; line-height: 28.8px; letter-spacing: 1px; color: white;">
-                プロフィールを編集する
-            </p>
+            <p>プロフィールを編集する</p>
         </button>
 
-        <p id="sub_btn">
-            退会する
-        </p>
+        <p id="sub_btn">退会する</p>
     </main>
 
     <footer>
-        <p id="logo">
-            Hanacoの業界特化型オンライン通訳
-        </p>
+        <p id="logo">Hanacoの業界特化型オンライン通訳</p>
 
-        <div style="top: 85px; left: 99px;">
-            <p style="color: #FFE585;">発注者の方</p>
+        <div id="firstline">
+            <p>発注者の方</p>
             <img src="images/Line 565.png" alt="">
             <p>通訳者の方</p>
         </div>
 
-        <div style="top: 158px; left: 201px;">
+        <div id="secondline">
             <p>Hanacoの業界特化型オンライン通訳について</p>
             <img src="images/Line 565.png" alt="">
             <p>利用検討企業様</p>
@@ -184,12 +165,12 @@
             <p>お問い合わせ</p>
         </div>
 
-        <div style="top: 216px; left: 487px;">
-            <p style="font-size: 12px; line-height: 19.73px;">会社概要</p>
+        <div id="thirdline">
+            <p>会社概要</p>
             <img src="images/Line 567.png" alt="">
-            <p style="font-size: 12px; line-height: 19.73px; color: #FFFFFF; ">利用規約</p>
+            <p>利用規約</p>
             <img src="images/Line 567.png" alt="">
-            <p style="font-size: 12px; line-height: 19.73px; color: #FFFFFF; ">プライバシーポリシー</p>
+            <p>プライバシーポリシー</p>
         </div>
     </footer>
 </body>
