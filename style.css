@@ -11,280 +11,202 @@ body{
 }
 
 header{
-    width: 1280px; height: 90px; position: relative; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+    width: 1280px; height: 90px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+    display: flex;
+}
+
+#slogan{
+    height: 100%; display: flex; align-items: center; padding-left: 40px;
 }
 
 #logo{
-    position: absolute; top: 30px; left: 40px; 
     font-family: 'Hind Jalandhar', sans-serif; font-weight: 600; font-size: 18px; color: #4C7DF0;
 }
 
 #idea{
-    position: absolute; top: 24px; left: 788px; text-align: center;
+    text-align: center;
+}
+
+#idea img{
+    width: 24px; height: 24px;
 }
 
 #idea p{
     font-size: 10px; color: #4C7DF0; margin-top: 5px;
 }
 
+#choice{
+    margin-left: 450px; height: 100%; display: flex; align-items: center; gap: 35px;
+}
+
 .header_img{
-    position: absolute;
     width: 30px; height: 30px;
 }
 
-#bell{
-    top: 30px; left: 870px;
-}
-
-#chat{
-    top: 30px; left: 930px;
-}
-
 #Ellipse{
-    top: 20px; left: 990px; width: 50px; height: 50px;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 header button{
-    position: absolute; width: 150px; height: 38px; top: 26px; left: 1090px; 
+    width: 150px; height: 38px; 
     background: #FFFFFF; border-radius: 19px;  border: 2px solid #4C7DF0; box-shadow: 0px 4px 6px 0px #00000026;
     font-size: 13px; color: #4C7DF0;
 }
 
+main{
+    width: 100%; height: max-content; display: flex; margin-top: 70px; 
+    flex-wrap: wrap;
+}
+
 #menu{
-    position: absolute; top: 160px; left: 160px;
+    margin: 0 0 0 160px;
 }
 
-#menu div{
-    width: 150px; height: 40px; 
-    border-radius: 3px; display: flex; align-items: center; padding-left: 5px;
+#menu ul {
+    list-style: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0; /* Bỏ khoảng cách mặc định */
+    margin: 0;
 }
 
-#menu div img{
-    margin-right: 10px; 
+#menu li {
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    margin: 8px 0 8px 0; /* Khoảng cách giữa các item */
 }
 
-#menu div p{
-    font-size: 16px; color: #7A7A7A;
+#menu ul li:first-child{
+    margin: 8px 0 18px 0;
 }
 
-#menu #hometitle{
+.icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+#menu li p {
+    font-size: 16px;
+    color: #7A7A7A;
+}
+
+#menu #hometitle {
     color: #4C7DF0;
 }
 
-#choosing{
+#menu #choosing {
     background: #E0EBF8;
 }
 
-#avatar img, #avatar p{
-    position: absolute;
+#profile{
+    padding-left: 60px;
 }
 
-#avatar #avapic{
-    top: 160px; left: 695px;
+#avatar{
+    display: flex;                 /* Sử dụng Flexbox để căn giữa và xếp theo chiều dọc */
+    flex-direction: column;        /* Xếp các phần tử theo chiều dọc */
+    align-items: center;
+    width: 100%;
 }
 
-#avatar p:first-child{
-    top: 287px; left: 658px; font-size: 14px; line-height: 15.4px; color: #00D1FF;
+#avapic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-#avatar p:last-child{
-    top: 280px; left: 705px;  font-size: 18px;
+#profiletitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 55px;
 }
 
-#avatar #circlewhite{
-    top: 283px; left: 653px; z-index: -1;
+#profiletitle img{
+    width: 40px;
+    height: 40px;
 }
 
-#avatar #circleblue{
-    top: 275px; left: 645px; z-index: -2;
+#form{
+    margin-top: 45px;
 }
 
-.inform img, .inform p, .inform hr{
-    position: absolute;
-    font-size: 16px; line-height: 24px;
-    left: 370px;
+#form12{
+    display: flex;
+    gap: 50px;
 }
 
-.inform p:first-child{
+#formtitle{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 17px;
+}
+
+#formtitle p{
     font-weight: 500;
+}
+
+#formtitle p:last-child{
+    font-weight: 700;
+    margin-left: 20px;
 }
 
 .inform hr{
     width: 750px;
     border: 1px solid #E0EBF8; margin: 0;
+    margin-bottom: 45px;
 }
 
-.firstinform p:first-child{
-    top: 363px; left: 388px;
-}
-
-.firstinform img{
-    top: 360px;
-}
-
-.firstinform hr{
+.firstinform hr, .secondinform hr, .thirdinform hr{
     width: 350px;
-    top: 407px;
 }
 
-.firstinform p:last-child{
-    top: 363px; left: 468px; 
+.fithinform #subtitle, .sixthinform #subtitle{
+    font-size: 10px; font-weight: 500; margin: 0 0 8px 25px
 }
 
-.secondinform p:first-child{
-    top: 363px; left: 788px;
+.fithinform #formtitle, .sixthinform #formtitle{
+    margin-bottom: 0px;
 }
 
-.secondinform img{
-    top: 360px; left: 770px;
+.tenthinform{
+    position: relative;
 }
 
-.secondinform hr{
-    width: 350px; top: 407px; left: 770px;
-}
-
-.secondinform p:last-child{
-    top: 363px; left: 935px;
-}
-
-.thirdinform p:first-child{
-    top: 450px; left: 388px;
-}
-
-.thirdinform img{
-    top: 447px;
-}
-
-.thirdinform hr{
-    width: 350px; top: 494px;
-}
-
-.thirdinform p:last-child{
-    top: 450px; left: 451px;
-}
-
-.fourthinform p:first-child{
-    top: 537px; left: 388px;
-}
-
-.fourthinform img{
-    top: 534px;
-}
-
-.fourthinform hr{
-    top: 581px;
-}
-
-.fourthinform p:last-child{
-    top: 537px; left: 451px; 
-}
-
-.fithinform p:first-child{
-    top: 624px; left: 388px;
-}
-
-.fithinform img{
-    top: 621px;
-}
-
-.fithinform #subtitle{
-    top: 653px; left: 388px; font-size: 10px; line-height: 15px; 
-}
-
-.fithinform hr{
-    top: 677px;
-}
-
-.fithinform p:last-child{
-    top: 624px; left: 535px;  
-}
-
-.sixthinform p:first-child{
-    top: 720px; left: 388px;
-}
-
-.sixthinform img{
-    top: 717px;
-}
-
-.sixthinform #subtitle{
-    top: 749px; left: 388px; font-size: 10px; line-height: 15px;  
-}
-
-.sixthinform hr{
-    top: 774px;
-}
-
-.sixthinform p:last-child{
-    top: 720px; left: 485px;  
-}
-
-.seventhinform p:first-child{
-    top: 817px; left: 388px; 
-}
-
-.seventhinform img{
-    top: 814px;
-}
-
-.seventhinform hr{
-    top: 861px;
-}
-
-.seventhinform p:last-child{
-    top: 817px; left: 468px;  
-}
-
-.eighthinform p:first-child{
-    top: 904px; left: 388px;  
-}
-
-.eighthinform img{
-    top: 901px;
-}
-
-.eighthinform hr{
-    top: 948px;
-}
-
-.eighthinform p:last-child{
-    top: 904px; left: 518px;  
-}
-
-.ninethinform p:first-child{
-    top: 991px; left: 388px;  
-}
-
-.ninethinform img{
-    top: 988px;
-}
-
-.ninethinform hr{
-    top: 1035px;
-}
-
-.ninethinform p:last-child{
-    top: 991px; left: 485px;   
-}
-
-.tenthinform p:first-child{
-    top: 1078px; left: 388px;   
+.tenthinform #formtitle{
+    margin-left: 25px;
 }
 
 .tenthinform img{
-    top: 1075px;
-}
-
-.tenthinform hr{
-    top: 1420px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .tenthinform p:last-child{
-    width: 635px; height: 312x; top: 1078px; left: 485px;   
+    width: 635px; height: 312x;  
+}
+
+.tenthinform hr{
+    margin-bottom: 0px;
+}
+
+#button{
+    margin-top: 70px; margin-bottom: 130px; margin-left: 465px;
+    text-align: center;
 }
 
 #btn{
-    position: absolute; width: 350px; height: 60px; top: 1490px; left: 465px;
+    width: 350px; height: 60px; margin-bottom: 30px;
     border-radius: 50px; background-color: #4C7DF0; border: none;
     display: flex; align-items: center; justify-content: center;
 }
@@ -293,27 +215,30 @@ header button{
     font-size: 18px; line-height: 28.8px; letter-spacing: 1px; color: white;
 }
 
+#btn img{
+    width: 24px;
+    height: 24px;
+}
+
 #sub_btn{
-    position: absolute; top: 1580px; left: 603px; 
     font-size: 18px; line-height: 28.8px; color: #4C7DF0;
 }
 
 footer{
-    position: absolute; width: 1280px; height: 240px; top: 1739px; background-color: #243A6B;
+    width: 1280px; height: 240px; background-color: #243A6B;
 }
 
-footer #logo{
-    position: absolute; top: 30px; left: 30px;  
-    font-weight: 500; font-size: 20px; line-height: 34.5px; color: #FFFFFF;
+footer #logo{  
+    padding: 30px 0 0 30px;
+    font-weight: 500; font-size: 20px; color: #FFFFFF;
 }
 
 footer div{
-    position: absolute;
     display: flex;
 }
 
 footer div p{
-    font-size: 14px; line-height: 23.02px; color: #FFFFFF; 
+    font-size: 14px; color: #FFFFFF; 
 }
 
 footer img{
@@ -321,7 +246,8 @@ footer img{
 }
 
 footer #firstline{
-    top: 85px; left: 99px;
+    margin-left: 99px;
+    margin-top: 20px;
 }
 
 footer #firstline p:first-child{
@@ -329,13 +255,13 @@ footer #firstline p:first-child{
 }
 
 footer #secondline{
-    top: 158px; left: 201px;
+    margin-top: 50px; margin-left: 201px;
 }
 
 footer #thirdline{
-    top: 216px; left: 487px;
+    margin-top: 35px; margin-left: 487px;
 }
 
 footer #thirdline p{
-    font-size: 12px; line-height: 19.73px;
+    font-size: 12px;
 }

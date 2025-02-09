@@ -15,137 +15,179 @@
 
 <body>
     <header>
-        <p id="logo">
-            Hanacoの業界特化型オンライン通訳
-        </p>
-    
-        <div id="idea">
-            <img src="images/Group 52.png" alt="">
-            <p>ご利用方法 </p>
+        <div id="slogan">
+            <p id="logo">
+                Hanacoの業界特化型オンライン通訳
+            </p>
         </div>
     
-        <img id="bell" class="header_img" src="images/bell 1.png" alt="">
-        <img id="chat" class="header_img" src="images/chat 2.png" alt="">
-        <img id="Ellipse" class="header_img" src="images/Ellipse 97.png" alt="">
-        
-        <button>企業の方はこちら</button>
+        <div id="choice">
+            <div id="idea">
+                <img src="images/Group 52.png" alt="">
+                <p>ご利用方法 </p>
+            </div>
+            <img id="bell" class="header_img" src="images/bell 1.png" alt="">
+            <img id="chat" class="header_img" src="images/chat 2.png" alt="">
+            <img id="Ellipse" class="header_img" src="images/Ellipse 97.png" alt="">
+            <button>企業の方はこちら</button>
+        </div>
     </header>    
 
     <main>
         <div id="menu">
-            <div>
-                <img src="images/home-icon-silhouette 1.png" alt="">
-                <p id="hometitle">マイページ</p> 
-            </div>
-            <div id="choosing">
-                <img src="images/user 1.png" alt="">
-                <p>プロフィール</p>
-            </div>
-            <div>
-                <img src="images/mail 1.png" alt="">
-                <p>メッセージ</p>
-            </div>
-            <div>
-                <img src="images/copy 1.png" alt="">
-                <p>オファー管理</p>
-            </div>
-            <div>
-                <img src="images/translating 1.png" alt="">
-                <p>仕事管理</p>
-            </div>
-            <div>
-                <img src="images/wallet 1.png" alt="">
-                <p>報酬管理</p>
-            </div>   
+            <ul>
+                <li>
+                    <img class="icon" src="images/home-icon-silhouette 1.png" alt="">
+                    <p id="hometitle">マイページ</p>
+                </li>
+                <li id="choosing">
+                    <img class="icon" src="images/user 1.png" alt="">
+                    <p>プロフィール</p>
+                </li>
+                <li>
+                    <img class="icon" src="images/mail 1.png" alt="">
+                    <p>メッセージ</p>
+                </li>
+                <li>
+                    <img class="icon" src="images/copy 1.png" alt="">
+                    <p>オファー管理</p>
+                </li>
+                <li>
+                    <img class="icon" src="images/translating 1.png" alt="">
+                    <p>仕事管理</p>
+                </li>
+                <li>
+                    <img class="icon" src="images/wallet 1.png" alt="">
+                    <p>報酬管理</p>
+                </li>
+            </ul>
         </div>
     
-        <div id="avatar">
-            <img src="images/Ellipse 93.png" alt="">
-            <div><p>プロフィール写真を変更</p></div>
-        </div>
-        
-        <div class="inform" id="firstinform">
-            <input class = "inputtext" type="text" class="custom-input" placeholder="姓">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p>お名前（必須）</p>
-            <input class = "inputtext" type="text" class="custom-input" placeholder="名">
-        </div>
-    
-        <div class="inform" id="secondinform">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p id="title">性別</p>
-            <div id="firstchoice">
-                <img src="images/Ellipse 26.png" alt="">
-                <p>男性</p>
+        <div id="profile">
+            <div id="avatar">
+                <img id="avapic" src="images/Ellipse 93.png" alt="">
+                <div><p>プロフィール写真を変更</p></div>
             </div>
-            <div id="secondchoice">
-                <img src="images/Ellipse 27.png" alt="">
-                <p>男性</p>
-            </div>
-            <div id="thirdchoice">
-                <img src="images/Ellipse 27.png" alt="">
-                <p>その他・未回答</p>
-            </div>
-        </div>
-    
-        <div class="inform" id="thirdinform">
-            <p>メールアドレス（必須）</p>
-            <img src="images/Rectangle 1173.png" alt="">
-            <input class = "inputtext" type="text" class="custom-input" placeholder="sample@sample.com">
-            <p>※公開されません</p>
-        </div>
-    
-        <div class="inform" id="fourthinform">
-            <p>電話番号</p>
-            <img src="images/Rectangle 1173.png" alt="">
-            <input class = "inputtext" type="text" class="custom-input" placeholder="090-0000-0000">
-            <p>※公開されません</p>
-        </div>
-    
-        <div class="inform" id="fifthinform">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p>母国語</p>
-            <input class = "inputtext" type="text" class="custom-input" placeholder="日本">
-        </div>
-    
-        <div class="inform" id="sixthinform">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p>通話可能言語（必須）</p>
-        
-            <div class="checkbox-group">
-                <div class="checkbox-row">
-                    <label><input type="checkbox" checked> 英語</label>
-                    <label><input type="checkbox"> 中国語</label>
-                    <label><input type="checkbox"> 韓国語</label>
-                    <label><input type="checkbox"> イタリア語</label>
-                    <label><input type="checkbox"> フランス語</label>
-                    <label><input type="checkbox"> スペイン語</label>
+
+            <div id="form">
+                <div class="inform" id="firstinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>お名前（必須）</p>
+                    </div>
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="姓">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="名">
+                    </div>
                 </div>
-                <div class="checkbox-row">
-                    <label><input type="checkbox"> ドイツ語</label>
-                    <label><input type="checkbox"> タイ語</label>
-                    <label><input type="checkbox"> ポルトガル語</label>
+            
+                <div class="inform" id="secondinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p id="title">性別</p>
+                    </div>
+                    <div class="int">
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="male">
+                            <span>男性</span>
+                        </label>
+                    
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="male2">
+                            <span>男性</span>
+                        </label>
+                    
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="other">
+                            <span>その他・未回答</span>
+                        </label>
+                    </div>                                        
                 </div>
-                <div class="checkbox-row">
-                    <label><input type="checkbox"> その他</label>
+            
+                <div class="inform" id="thirdinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>メールアドレス（必須）</p>
+                        <p class="subtitle">※公開されません</p>
+                    </div>
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="sample@sample.com">
+                    </div>
                 </div>
-            </div>
-        
-            <input class = "inputtext" type="text" class="custom-input" placeholder="上記にない言語はこちらに記入してください">
-        </div>    
-    
-        <div class="inform" id="seventhinform">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p>取得検定</p>
-            <input class = "inputtext" type="text" class="custom-input" placeholder="TOEIC 1級 など">
-        </div>
-    
-        <div class="inform" id="eighthinform">
-            <img src="images/Rectangle 1173.png" alt="">
-            <p>自己紹介</p>
-            <textarea class = "inputtext" class="custom-input" placeholder="自由に記入してください。
+            
+                <div class="inform" id="fourthinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>電話番号</p>
+                        <p class="subtitle">※公開されません</p>
+                    </div>
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="090-0000-0000">
+                    </div>
+                </div>
+            
+                <div class="inform" id="fifthinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>母国語</p>
+                    </div>
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="日本">
+                    </div>
+                </div>
+            
+                <div class="inform" id="sixthinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>通話可能言語（必須）</p>
+                    </div>
+                
+                    <div class="checkbox-group">
+                        <div class="checkbox-row">
+                            <label><input type="checkbox" checked> 英語</label>
+                            <label><input type="checkbox"> 中国語</label>
+                            <label><input type="checkbox"> 韓国語</label>
+                            <label><input type="checkbox"> イタリア語</label>
+                            <label><input type="checkbox"> フランス語</label>
+                            <label><input type="checkbox"> スペイン語</label>
+                        </div>
+                        <div class="checkbox-row">
+                            <label><input type="checkbox"> ドイツ語</label>
+                            <label><input type="checkbox"> タイ語</label>
+                            <label><input type="checkbox"> ポルトガル語</label>
+                        </div>
+                        <div class="checkbox-row">
+                            <label><input type="checkbox"> その他</label>
+                        </div>
+                    </div>
+
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="上記にない言語はこちらに記入してください">
+                    </div>
+                </div>    
+            
+                <div class="inform" id="seventhinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>取得検定</p>
+                    </div>
+                    <div class="int">
+                        <input class = "inputtext" type="text" class="custom-input" placeholder="TOEIC 1級 など">
+                    </div>
+                </div>
+            
+                <div class="inform" id="eighthinform">
+                    <div class="formtitle">
+                        <img src="images/Rectangle 1173.png" alt="">
+                        <p>自己紹介</p>
+                    </div>
+                    <div class="int">
+                        <textarea class = "inputtext" class="custom-input" placeholder="自由に記入してください。
 【例】経歴や、経験、得意分野など。"></textarea>    
-        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
     
         <button id="btn">  
             <p>変更を保存する</p>
