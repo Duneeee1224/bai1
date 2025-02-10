@@ -1,6 +1,7 @@
 *{
     font-family: 'Yu Gothic', 'YuGothic', sans-serif;
     font-weight: 700;
+    color: #333333;
 }
 p{
     margin: 0;
@@ -15,8 +16,16 @@ header{
     display: flex;
 }
 
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(90%);
+}
+
 #slogan{
-    height: 100%; display: flex; align-items: center; padding-left: 40px;
+    height: 100%; display: flex; align-items: center; padding: 0 40px;
 }
 
 #logo{
@@ -36,7 +45,7 @@ header{
 }
 
 #choice{
-    margin-left: 450px; height: 100%; display: flex; align-items: center; gap: 35px;
+    margin-left: 410px; height: 100%; display: flex; align-items: center; gap: 35px;
 }
 
 .header_img{
@@ -76,7 +85,6 @@ main{
     border-radius: 3px;
     display: flex;
     align-items: center;
-    padding-left: 5px;
     margin: 8px 0 8px 0; /* Khoảng cách giữa các item */
 }
 
@@ -85,7 +93,7 @@ main{
 }
 
 .icon {
-    margin-right: 10px;
+    margin: 0px 10px;
     width: 24px;
     height: 24px;
 }
@@ -99,8 +107,9 @@ main{
     color: #4C7DF0;
 }
 
-#menu #choosing {
+#menu li:hover {
     background: #E0EBF8;
+    cursor: pointer;
 }
 
 #profile{
@@ -115,6 +124,11 @@ main{
     font-size: 18px; color: #4C7DF0;
 }
 
+#avatar div:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
 #avapic{
     width: 100px;
     height: 100px;
@@ -126,6 +140,10 @@ main{
 #avatar div{
     width: 250px; height: 42px; border-radius: 5px; border: 2px solid #4C7DF0; 
     display: flex; align-items: center; justify-content: center;
+}
+
+#avatar div p{
+    color: #4C7DF0;
 }
 
 #form{
@@ -145,12 +163,16 @@ main{
 
 .formtitle p{
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 5%;
 }
 
 .inform .int{
     display: flex;
     gap: 50px;
 }
+
 
 #firstinform input, fourthinform input{
     width: 290px;
@@ -159,6 +181,34 @@ main{
 .int label input{
     width: 20px;
     height: 20px;
+}
+
+.radio-option{
+    display: flex; 
+    align-items: center;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+    margin: 0px;
+}
+  
+.radio-option span::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Kích thước vòng tròn */
+    height: 20px;
+    border: 2px solid #4C7DF0;
+    border-radius: 50%;
+    margin-right: 15px; /* Khoảng cách giữa vòng tròn và chữ */
+    background-color: #fff;
+    box-shadow: inset 0 0 0 4px #fff; /* Tạo khoảng trắng giữa viền và nền */
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+  
+.radio-option input[type="radio"]:checked + span::before {
+    box-shadow: inset 0 0 0 4px #4C7DF0; /* Vòng tròn nhỏ bên trong */
 }
 
 .int label span{
@@ -273,6 +323,11 @@ footer img{
 footer #firstline{
     margin-left: 99px;
     margin-top: 20px;
+}
+
+footer #firstline p:hover, footer #secondline p:hover, footer #thirdline p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer #firstline p:first-child{

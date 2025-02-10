@@ -1,13 +1,12 @@
 *{
     font-family: 'Yu Gothic', 'YuGothic', sans-serif;
     font-weight: 700;
-}
-p{
+    color: #333333;
     margin: 0;
 }
+
 body{
     width: 1280px; height: auto; position: relative; margin: 0 auto;
-    
 }
 
 header{
@@ -15,8 +14,16 @@ header{
     display: flex;
 }
 
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    filter: brightness(90%);
+}
+
 #slogan{
-    height: 100%; display: flex; align-items: center; padding-left: 40px;
+    height: 100%; display: flex; align-items: center; padding: 0 40px;
 }
 
 #logo{
@@ -36,7 +43,7 @@ header{
 }
 
 #choice{
-    margin-left: 450px; height: 100%; display: flex; align-items: center; gap: 35px;
+    margin-left: 410px; height: 100%; display: flex; align-items: center; gap: 35px;
 }
 
 .header_img{
@@ -76,7 +83,6 @@ main{
     border-radius: 3px;
     display: flex;
     align-items: center;
-    padding-left: 5px;
     margin: 8px 0 8px 0; /* Khoảng cách giữa các item */
 }
 
@@ -85,7 +91,7 @@ main{
 }
 
 .icon {
-    margin-right: 10px;
+    margin: 0px 10px;
     width: 24px;
     height: 24px;
 }
@@ -99,8 +105,9 @@ main{
     color: #4C7DF0;
 }
 
-#menu #choosing {
+#menu li:hover {
     background: #E0EBF8;
+    cursor: pointer;
 }
 
 #profile{
@@ -142,19 +149,45 @@ main{
 #form12{
     display: flex;
     gap: 50px;
+    width: 750px;
+    position: relative;
+    border-bottom: none; /* Xóa border-bottom mặc định */
+    background: linear-gradient(to right, 
+        #E0EBF8 0%, #E0EBF8 46.6%,  /* Đoạn đầu dài 350px */
+        transparent 46.6%, transparent 53.3%, /* Khoảng trắng 50px */
+        #E0EBF8 53.3%, #E0EBF8 100% /* Đoạn cuối dài 350px */
+    );
+    background-size: 100% 2px; /* Chiều cao của đường viền */
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
-#formtitle{
+.inform{
+    margin-bottom: 17px;
+    width: 750px;
+    border-bottom: 2px solid #E0EBF8;
+    padding-bottom: 17px;
+    margin-bottom: 40px;
+}
+
+.formtitle{
     display: flex;
     gap: 10px;
-    margin-bottom: 17px;
+    
 }
 
-#formtitle p{
+#firstinform .formtitle, #secondinform .formtitle, #thirdinform .formtitle{
+    width: 350px;
+}
+
+.formtitle p{
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 5%;
 }
 
-#formtitle p:last-child{
+.formtitle p:last-child{
     font-weight: 700;
     margin-left: 20px;
 }
@@ -162,41 +195,39 @@ main{
 .inform hr{
     width: 750px;
     border: 1px solid #E0EBF8; margin: 0;
-    margin-bottom: 45px;
 }
 
-.firstinform hr, .secondinform hr, .thirdinform hr{
+#firstinform hr, #secondinform hr, #thirdinform hr{
     width: 350px;
 }
 
-.fithinform #subtitle, .sixthinform #subtitle{
-    font-size: 10px; font-weight: 500; margin: 0 0 8px 25px
+#fithinform #subtitle, #sixthinform #subtitle{
+    font-size: 10px; font-weight: 500; margin: 0 0 0px 20px
 }
 
-.fithinform #formtitle, .sixthinform #formtitle{
+#fithinform .formtitle, #sixthinform .formtitle{
+    padding-bottom: 0px;
+}
+
+#tenthinform .formtitle{
+    display: flex;
+    align-items: flex-start; /* Căn phần tử con lên trên */
+    justify-content: flex-start; /* Căn phần tử con sang trái */
+}
+
+#tenthinform{
     margin-bottom: 0px;
 }
 
-.tenthinform{
-    position: relative;
+#titleten{
+    white-space: nowrap;
 }
 
-.tenthinform #formtitle{
-    margin-left: 25px;
-}
-
-.tenthinform img{
-    object-fit: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.tenthinform p:last-child{
+#tenthinform p:last-child{
     width: 635px; height: 312x;  
 }
 
-.tenthinform hr{
+#tenthinform hr{
     margin-bottom: 0px;
 }
 
@@ -209,6 +240,10 @@ main{
     width: 350px; height: 60px; margin-bottom: 30px;
     border-radius: 50px; background-color: #4C7DF0; border: none;
     display: flex; align-items: center; justify-content: center;
+}
+
+#btn img{
+    padding-right: 10px;
 }
 
 #btn p{
@@ -248,6 +283,11 @@ footer img{
 footer #firstline{
     margin-left: 99px;
     margin-top: 20px;
+}
+
+footer #firstline p:hover, footer #secondline p:hover, footer #thirdline p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 footer #firstline p:first-child{
