@@ -7,12 +7,17 @@ p{
     margin: 0;
 }
 body{
-    width: 1280px; height: auto; position: relative; margin: 0 auto;
+    width: 1280px; 
+    height: auto; 
+    position: relative; 
+    margin: 0 auto;
     
 }
 
 header{
-    width: 1280px; height: 90px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+    width: 1280px; 
+    height: 90px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
     display: flex;
 }
 
@@ -25,11 +30,17 @@ button:hover{
 }
 
 #slogan{
-    height: 100%; display: flex; align-items: center; padding: 0 40px;
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 40px;
 }
 
 #logo{
-    font-family: 'Hind Jalandhar', sans-serif; font-weight: 600; font-size: 18px; color: #4C7DF0;
+    font-family: 'Hind Jalandhar', sans-serif; 
+    font-weight: 600; 
+    font-size: 18px; 
+    color: #4C7DF0;
 }
 
 #idea{
@@ -41,31 +52,44 @@ button:hover{
 }
 
 #idea p{
-    font-size: 10px; color: #4C7DF0; margin-top: 5px;
+    font-size: 10px; 
+    color: #4C7DF0; margin-top: 5px;
 }
 
 #choice{
-    margin-left: 410px; height: 100%; display: flex; align-items: center; gap: 35px;
+    margin-left: 410px; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    gap: 35px;
 }
 
 .header_img{
-    width: 30px; height: 30px;
+    width: 30px; 
+    height: 30px;
 }
 
 #Ellipse{
-    width: 50px; height: 50px;
+    width: 50px; 
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 header button{
     width: 150px; height: 38px; 
-    background: #FFFFFF; border-radius: 19px;  border: 2px solid #4C7DF0; box-shadow: 0px 4px 6px 0px #00000026;
+    background: #FFFFFF; 
+    border-radius: 19px;  
+    border: 2px solid #4C7DF0; 
+    box-shadow: 0px 4px 6px 0px #00000026;
     font-size: 13px; color: #4C7DF0;
 }
 
 main{
-    width: 100%; height: max-content; display: flex; margin-top: 70px;
+    width: 100%; 
+    height: max-content; 
+    display: flex; 
+    margin-top: 70px;
     flex-wrap: wrap;
 }
 
@@ -138,8 +162,13 @@ main{
 }
 
 #avatar div{
-    width: 250px; height: 42px; border-radius: 5px; border: 2px solid #4C7DF0; 
-    display: flex; align-items: center; justify-content: center;
+    width: 250px; 
+    height: 42px; 
+    border-radius: 5px;
+    border: 2px solid #4C7DF0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 #avatar div p{
@@ -289,9 +318,15 @@ input::placeholder, textarea::placeholder{
 
 #btn{
     width: 250px; height: 60px;
-    border-radius: 30px; border: none;  background: linear-gradient(to right, #4c7df0, #2c57bc);
-    display: flex; align-items: center; justify-content: center; gap: 10px;
-    margin-top: 70px; margin-left: 565px;
+    border-radius: 30px; 
+    border: none;  
+    background: linear-gradient(to right, #4c7df0, #2c57bc);
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 70px; 
+    margin-left: 565px;
 }
 
 #btn p{
@@ -300,12 +335,14 @@ input::placeholder, textarea::placeholder{
 
 footer{
     margin-top: 130px;
-    width: 1280px; height: 240px; background-color: #243A6B;
+    width: 1280px; height: 240px; 
+    background-color: #243A6B;
 }
 
 footer #logo{  
     padding: 30px 0 0 30px;
-    font-weight: 500; font-size: 20px; color: #FFFFFF;
+    font-weight: 500; 
+    font-size: 20px; color: #FFFFFF;
 }
 
 footer div{
