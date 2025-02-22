@@ -1,106 +1,110 @@
-*{
+* {
     font-family: 'Yu Gothic', 'YuGothic', sans-serif;
     font-weight: 700;
     color: #333333;
     margin: 0;
 }
 
-body{
-    width: 1280px; 
-    height: auto; 
-    position: relative; 
+body {
+    width: 1280px;
+    height: auto;
+    position: relative;
     margin: 0 auto;
 }
 
-header{
-    width: 1280px; 
-    height: 90px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+header {
+    width: 1280px;
+    height: 90px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     filter: brightness(90%);
 }
 
-#slogan{
-    height: 100%; 
-    display: flex; 
-    align-items: center; 
+#slogan {
+    height: 100%;
+    display: flex;
+    align-items: center;
     padding: 0 40px;
 }
 
-#logo{
-    font-family: 'Hind Jalandhar', sans-serif; 
-    font-weight: 600; 
-    font-size: 18px; color: #4C7DF0;
+#logo {
+    font-family: 'Hind Jalandhar', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4C7DF0;
 }
 
-#idea{
+#idea {
     text-align: center;
 }
 
-#idea img{
-    width: 24px; height: 24px;
+#idea img {
+    width: 24px;
+    height: 24px;
 }
 
-#idea p{
-    font-size: 10px; 
-    color: #4C7DF0; 
+#idea p {
+    font-size: 10px;
+    color: #4C7DF0;
     margin-top: 5px;
 }
 
 
-#choice{
+#choice {
     margin-left: 410px;
-    height: 100%; 
-    display: flex; 
-    align-items: center; 
+    height: 100%;
+    display: flex;
+    align-items: center;
     gap: 35px;
 }
 
-.header_img{
-    width: 30px; 
+.header_img {
+    width: 30px;
     height: 30px;
 }
 
-#Ellipse{
-    width: 50px; 
+#Ellipse {
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-header button{
-    width: 150px; 
-    height: 38px; 
-    background: #FFFFFF; 
-    border-radius: 19px;  
-    border: 2px solid #4C7DF0; 
+header button {
+    width: 150px;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 19px;
+    border: 2px solid #4C7DF0;
     box-shadow: 0px 4px 6px 0px #00000026;
-    font-size: 13px; 
+    font-size: 13px;
     color: #4C7DF0;
 }
 
-main{
-    width: 100%; 
-    height: max-content; 
-    display: flex; 
-    margin-top: 70px; 
+main {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    margin-top: 70px;
     flex-wrap: wrap;
 }
 
-#menu{
+#menu {
     margin: 0 0 0 160px;
 }
 
 #menu ul {
-    list-style: none; /* Bỏ dấu chấm đầu dòng */
-    padding: 0; /* Bỏ khoảng cách mặc định */
+    list-style: none;
+    /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    /* Bỏ khoảng cách mặc định */
     margin: 0;
 }
 
@@ -110,10 +114,11 @@ main{
     border-radius: 3px;
     display: flex;
     align-items: center;
-    margin: 8px 0 8px 0; /* Khoảng cách giữa các item */
+    margin: 8px 0 8px 0;
+    /* Khoảng cách giữa các item */
 }
 
-#menu ul li:first-child{
+#menu ul li:first-child {
     margin: 8px 0 18px 0;
 }
 
@@ -137,18 +142,20 @@ main{
     cursor: pointer;
 }
 
-#profile{
+#profile {
     padding-left: 60px;
 }
 
-#avatar{
-    display: flex;                 /* Sử dụng Flexbox để căn giữa và xếp theo chiều dọc */
-    flex-direction: column;        /* Xếp các phần tử theo chiều dọc */
+#avatar {
+    display: flex;
+    /* Sử dụng Flexbox để căn giữa và xếp theo chiều dọc */
+    flex-direction: column;
+    /* Xếp các phần tử theo chiều dọc */
     align-items: center;
     width: 100%;
 }
 
-#avapic{
+#avapic {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -156,7 +163,7 @@ main{
     margin-bottom: 20px;
 }
 
-#profiletitle{
+#profiletitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,32 +171,37 @@ main{
     padding-right: 55px;
 }
 
-#profiletitle img{
+#profiletitle img {
     width: 40px;
     height: 40px;
 }
 
-#form{
+#form {
     margin-top: 45px;
 }
 
-#form12{
+#form12 {
     display: flex;
     gap: 50px;
     width: 750px;
     position: relative;
-    border-bottom: none; /* Xóa border-bottom mặc định */
-    background: linear-gradient(to right, 
-        #E0EBF8 0%, #E0EBF8 46.6%,  /* Đoạn đầu dài 350px */
-        transparent 46.6%, transparent 53.3%, /* Khoảng trắng 50px */
-        #E0EBF8 53.3%, #E0EBF8 100% /* Đoạn cuối dài 350px */
-    );
-    background-size: 100% 2px; /* Chiều cao của đường viền */
+    border-bottom: none;
+    /* Xóa border-bottom mặc định */
+    background: linear-gradient(to right,
+            #E0EBF8 0%, #E0EBF8 46.6%,
+            /* Đoạn đầu dài 350px */
+            transparent 46.6%, transparent 53.3%,
+            /* Khoảng trắng 50px */
+            #E0EBF8 53.3%, #E0EBF8 100%
+            /* Đoạn cuối dài 350px */
+        );
+    background-size: 100% 2px;
+    /* Chiều cao của đường viền */
     background-repeat: no-repeat;
     background-position: bottom left;
 }
 
-.inform{
+.inform {
     margin-bottom: 17px;
     width: 750px;
     border-bottom: 2px solid #E0EBF8;
@@ -197,156 +209,172 @@ main{
     margin-bottom: 40px;
 }
 
-.formtitle{
+.formtitle {
     display: flex;
     gap: 10px;
-    
+
 }
 
-#firstinform .formtitle, #secondinform .formtitle, #thirdinform .formtitle{
+#firstinform .formtitle,
+#secondinform .formtitle,
+#thirdinform .formtitle {
     width: 350px;
 }
 
-.formtitle p{
+.formtitle p {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 5%;
 }
 
-.formtitle p:last-child{
+.formtitle p:last-child {
     font-weight: 700;
     margin-left: 20px;
 }
 
-.inform hr{
+.inform hr {
     width: 750px;
-    border: 1px solid #E0EBF8; margin: 0;
+    border: 1px solid #E0EBF8;
+    margin: 0;
 }
 
-#firstinform hr, #secondinform hr, #thirdinform hr{
+#firstinform hr,
+#secondinform hr,
+#thirdinform hr {
     width: 350px;
 }
 
-#fithinform #subtitle, #sixthinform #subtitle{
-    font-size: 10px; 
-    font-weight: 500; margin: 0 0 0px 20px
+#fithinform #subtitle,
+#sixthinform #subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0 0 0px 20px
 }
 
-#fithinform .formtitle, #sixthinform .formtitle{
+#fithinform .formtitle,
+#sixthinform .formtitle {
     padding-bottom: 0px;
 }
 
-#tenthinform .formtitle{
+#tenthinform .formtitle {
     display: flex;
-    align-items: flex-start; /* Căn phần tử con lên trên */
-    justify-content: flex-start; /* Căn phần tử con sang trái */
+    align-items: flex-start;
+    /* Căn phần tử con lên trên */
+    justify-content: flex-start;
+    /* Căn phần tử con sang trái */
 }
 
-#tenthinform{
+#tenthinform {
     margin-bottom: 0px;
 }
 
-#titleten{
+#titleten {
     white-space: nowrap;
 }
 
-#tenthinform p:last-child{
-    width: 635px; height: 312x;  
+#tenthinform p:last-child {
+    width: 635px;
+    height: 312x;
 }
 
-#tenthinform hr{
+#tenthinform hr {
     margin-bottom: 0px;
 }
 
-#button{
-    margin-top: 70px; 
-    margin-bottom: 130px; 
+#button {
+    margin-top: 70px;
+    margin-bottom: 130px;
     margin-left: 465px;
     text-align: center;
 }
 
-#btn{
-    width: 350px; 
-    height: 60px; 
+#btn {
+    width: 350px;
+    height: 60px;
     margin-bottom: 30px;
-    border-radius: 50px; 
-    background-color: #4C7DF0; 
+    border-radius: 50px;
+    background-color: #4C7DF0;
     border: none;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#btn img{
+#btn img {
     padding-right: 10px;
 }
 
-#btn p{
-    font-size: 18px; 
-    line-height: 28.8px; 
-    letter-spacing: 1px; 
+#btn p {
+    font-size: 18px;
+    line-height: 28.8px;
+    letter-spacing: 1px;
     color: white;
 }
 
-#btn img{
+#btn img {
     width: 24px;
     height: 24px;
 }
 
-#sub_btn{
-    font-size: 18px; 
-    line-height: 28.8px; 
+#sub_btn {
+    font-size: 18px;
+    line-height: 28.8px;
     color: #4C7DF0;
 }
 
-footer{
-    width: 1280px; 
-    height: 240px; 
+footer {
+    width: 1280px;
+    height: 240px;
     background-color: #243A6B;
 }
 
-footer #logo{  
+footer #logo {
     padding: 30px 0 0 30px;
-    font-weight: 500; 
-    font-size: 20px; 
+    font-weight: 500;
+    font-size: 20px;
     color: #FFFFFF;
 }
 
-footer div{
+footer div {
     display: flex;
 }
 
-footer div p{
-    font-size: 14px; color: #FFFFFF; 
+footer div p {
+    font-size: 14px;
+    color: #FFFFFF;
 }
 
-footer img{
+footer img {
     margin: 0px 20px;
 }
 
-footer #firstline{
+footer #firstline {
     margin-left: 99px;
     margin-top: 20px;
 }
 
-footer #firstline p:hover, footer #secondline p:hover, footer #thirdline p:hover{
+footer #firstline p:hover,
+footer #secondline p:hover,
+footer #thirdline p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-footer #firstline p:first-child{
+footer #firstline p:first-child {
     color: #FFE585;
 }
 
-footer #secondline{
-    margin-top: 50px; margin-left: 201px;
+footer #secondline {
+    margin-top: 50px;
+    margin-left: 201px;
 }
 
-footer #thirdline{
-    margin-top: 35px; margin-left: 487px;
+footer #thirdline {
+    margin-top: 35px;
+    margin-left: 487px;
 }
 
-footer #thirdline p{
+footer #thirdline p {
     font-size: 12px;
 }
